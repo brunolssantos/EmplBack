@@ -1,0 +1,31 @@
+GET http://localhost:3000/empl/hello
+###
+
+GET http://localhost:3000/empl/
+###
+
+GET http://localhost:3000/empl/get/1
+###
+
+POST http://localhost:3000/empl/add
+Content-Type: application/json
+
+{
+    "firstName": "Will",
+    "lastName": "Smith",
+    "hireDate": "2020-01-15",
+    "position": "Software Engineer"
+}
+###
+
+PUT http://localhost:3000/empl/position/1
+Content-Type: application/json
+
+{
+    "position": "Senior Software Engineer"
+}
+###
+
+DELETE http://localhost:3000/empl/delete/3
+###
+
